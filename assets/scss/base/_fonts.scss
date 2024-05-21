@@ -1,0 +1,11 @@
+@import "../fonts/Gropled/stylesheet";
+@import "../fonts/VelaSans/stylesheet";
+
+* {
+    font-family: "VelaSans", sans-serif;
+}
+.g-font,
+.g-font * {
+    font-family: "Gropled", sans-serif;
+    line-height: 100%;
+}

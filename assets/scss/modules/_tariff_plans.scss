@@ -1,0 +1,118 @@
+.tariff-plans {
+    color: #fff;
+    margin-top: 200px;
+    @include breakpoint(sm) {
+        margin-top: 100px;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 135px;
+        @include breakpoint(xl) {
+            font-size: 80px;
+        }
+        @include breakpoint(sm) {
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+    .plans {
+        .card {
+            margin-top: 100px;
+            width: 100%;
+            height: auto;
+            border-radius: 33px;
+            padding: 60px 60px;
+            @include breakpoint(sm) {
+                margin-top: 40px;
+                padding: 40px 30px;
+                border-radius: 15px;
+            }
+            //
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-image: url("../img/plan-purple.png");
+            &.green {
+                background-image: url("../img/plan-green.png");
+            }
+            .name {
+                font-weight: 700;
+                font-size: 48px;
+                @include breakpoint(xl) {
+                    font-size: 40px;
+                }
+                @include breakpoint(sm) {
+                    font-size: 24px;
+                }
+            }
+            .options {
+                width: fit-content;
+                margin-top: 40px;
+                margin-bottom: 34px;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                column-gap: 12px;
+                row-gap: 12px;
+                p {
+                    width: fit-content;
+                    padding: 10px 20px;
+                    border-radius: 15px;
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: rgba(255, 255, 255, 0.6);
+                    background: rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(5px);
+                    @include breakpoint(xl) {
+                        font-size: 20px;
+                    }
+                    @include breakpoint(sm) {
+                        font-size: 16px;
+                    }
+                }
+                @include breakpoint(sm) {
+                    grid-template-columns: auto;
+                    margin-top: 20px;
+                }
+            }
+            .text {
+                font-weight: 600;
+                font-size: 26px;
+                color: rgba(255, 255, 255, 0.6);
+                &.disabled {
+                    color: rgba(255, 255, 255, 0.4);
+                }
+                @include breakpoint(xl) {
+                    font-size: 22px;
+                }
+                @include breakpoint(sm) {
+                    font-size: 16px;
+                }
+            }
+            .btn {
+                margin-top: 25px;
+                background-color: $mainColor;
+                &.green {
+                    background-color: #44b831;
+                }
+                border-radius: 15px;
+                padding: 18px 25px;
+                font-weight: 800;
+                font-size: 22px;
+                color: #fff;
+                transition: all 0.2s ease-in-out;
+                @include breakpoint(xl) {
+                    font-size: 18px;
+                }
+                @include breakpoint(sm) {
+                    font-size: 16px;
+                }
+                &:hover {
+                    background-color: $hoverColor;
+                    &.green {
+                        background-color: #399b29;
+                    }
+                }
+            }
+        }
+    }
+}

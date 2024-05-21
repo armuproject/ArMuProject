@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    display: inline-flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+input {
+    outline: none;
+    border: none;
+}
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+}

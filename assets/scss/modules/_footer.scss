@@ -1,0 +1,129 @@
+.footer {
+    margin-top: 150px;
+    padding-bottom: 150px;
+    .container {
+        position: relative;
+    }
+    @include breakpoint(xl) {
+        padding-bottom: 70px;
+    }
+    @include breakpoint(md) {
+        padding-bottom: 50px;
+        .row {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .copyright {
+        img {
+            margin-bottom: 15px;
+            max-width: 100%;
+        }
+        font-weight: 500;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.6);
+        @include breakpoint(xl) {
+            font-size: 16px;
+        }
+        @include breakpoint(md) {
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+    .footer-nav {
+        width: 100%;
+        display: flex;
+        color: #fff;
+        @include breakpoint(md) {
+            flex-direction: column;
+            text-align: center;
+        }
+        @include breakpoint(xl) {
+            justify-content: center;
+        }
+        .group {
+            margin-right: 30px;
+            display: flex;
+            flex-direction: column;
+            @include breakpoint(md) {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            .name {
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 20px;
+                @include breakpoint(xl) {
+                    font-size: 18px;
+                }
+                @include breakpoint(md) {
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+            }
+            a {
+                color: #fff;
+                font-weight: 500;
+                font-size: 18px;
+                @include breakpoint(xl) {
+                    font-size: 14px;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                @include breakpoint(md) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    .social-btn {
+        position: absolute;
+        right: -200px;
+        top: 0;
+        svg path {
+            transition: all 0.2s ease-in-out;
+        }
+        &:hover {
+            svg {
+                path {
+                    fill-opacity: 0.25;
+                }
+            }
+        }
+        &:focus {
+            svg path {
+                fill-opacity: 1;
+                fill: #0077ff;
+            }
+        }
+
+        @include breakpoint(xl) {
+            position: unset;
+            right: unset;
+            top: unset;
+            height: fit-content;
+            margin-left: auto;
+            svg {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        @include breakpoint(md) {
+            margin: 0 auto 30px auto;
+            svg {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    overflow-y: hidden;
+    overflow-x: hidden;
+}

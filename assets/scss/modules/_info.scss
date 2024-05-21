@@ -1,0 +1,41 @@
+.cloud-info {
+    .wrap {
+        align-items: center;
+    }
+    img {
+        max-width: 100%;
+    }
+    .text {
+        font-weight: 600;
+        font-size: 32px;
+        color: #fff;
+        @include breakpoint(sm) {
+            text-align: center;
+        }
+        &.right {
+            text-align: right;
+            @include breakpoint(sm) {
+                text-align: center;
+            }
+        }
+        @include breakpoint(xl) {
+            font-size: 24px;
+        }
+        @include breakpoint(lg) {
+            font-size: 18px;
+        }
+    }
+    @include breakpoint(sm) {
+        .reverse {
+            flex-direction: column-reverse;
+        }
+        img {
+            display: flex;
+            width: 150px;
+            margin: 0 auto;
+        }
+        .wrap {
+            margin-bottom: 50px;
+        }
+    }
+}

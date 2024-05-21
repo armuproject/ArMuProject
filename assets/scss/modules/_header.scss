@@ -1,0 +1,86 @@
+.header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 30px 0;
+    .logo {
+        width: 84px;
+        height: 84px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            &.hover {
+                z-index: 1;
+                opacity: 0;
+                transition: all 0.1s ease-in-out;
+            }
+        }
+        &:hover {
+            img.hover {
+                opacity: 1;
+            }
+        }
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        @include breakpoint(md) {
+            display: none;
+        }
+        a {
+            font-weight: 600;
+            font-size: 22px;
+            color: #fff;
+            margin-right: 54px;
+            position: relative;
+            @include breakpoint(xl) {
+                font-size: 18px;
+                margin-right: 40px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: $mainColor;
+                width: 0;
+                height: 5px;
+                transition: all 0.2s;
+            }
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .mobile-show {
+        display: none;
+    }
+    .mobile-menu-btn {
+        margin-left: auto;
+        width: 40px;
+        height: 40px;
+        svg,
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @include breakpoint(md) {
+        padding: 30px 20px;
+        .header-btn {
+            display: none;
+        }
+        .mobile-show {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import "_variables.scss";
+@import "_reset.scss";
+@import "_fonts.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $bodyColor;
+    min-height: 100vh;
+    &.disabled {
+        overflow: hidden;
+    }
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+    background: #6f6f6f;
+}
+::-webkit-scrollbar-thumb {
+    background: $mainColor;
+    border-radius: 10px;
+}

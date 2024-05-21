@@ -1,0 +1,126 @@
+welcome {
+    width: 100%;
+    height: 100dvh;
+    color: #fff;
+    font-weight: 700;
+    font-size: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ////
+    background-image: url("../img/welcome-img.png");
+    background-position: right center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    @include breakpoint(xl) {
+        font-size: 80px;
+    }
+    .mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($bodyColor, 1);
+        z-index: 0;
+        transition: all 0.2s ease-in-out;
+        &.hide {
+            mask: unset;
+            -webkit-mask: unset;
+        }
+        :root {
+            --mouse-x: 50%;
+            --mouse-y: 50%;
+        }
+        mask: radial-gradient(
+            circle at var(--mouse-x) var(--mouse-y),
+            transparent 150px,
+            black 250px
+        );
+        -webkit-mask: radial-gradient(
+            circle at var(--mouse-x) var(--mouse-y),
+            transparent 150px,
+            black 250px
+        );
+    }
+    @include breakpoint(md) {
+        font-size: 40px;
+        .mask {
+            background-color: rgba(0, 0, 0, 0.5);
+            mask: unset;
+            -webkit-mask: unset;
+        }
+    }
+    .content {
+        position: relative;
+        .type {
+            position: relative;
+            z-index: 1;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 13px;
+                width: 100%;
+                height: 18px;
+                background-color: $mainColor;
+                z-index: -1;
+                @include breakpoint(xl) {
+                    height: 10px;
+                    bottom: 5px;
+                }
+                @include breakpoint(xl) {
+                    height: 5px;
+                }
+            }
+            &.green {
+                &::after {
+                    background-color: #2aff26;
+                }
+            }
+            &.yellow {
+                &::after {
+                    background-color: #ffb526;
+                }
+            }
+            &.no_color {
+                &::after {
+                    background-color: #ffffff;
+                }
+            }
+        }
+    }
+    .arrows {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        img {
+            margin-top: -7px;
+            opacity: 0;
+            @keyframes arrowAnimation {
+                0% {
+                    opacity: 0;
+                }
+                33% {
+                    opacity: 1;
+                }
+                66% {
+                    opacity: 0;
+                }
+            }
+            animation: arrowAnimation 2s linear infinite;
+            &:nth-child(2) {
+                animation-delay: 0.5s;
+            }
+            &:nth-child(3) {
+                animation-delay: 1s;
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.feedbacks {
+    margin-top: 150px;
+    .container {
+        position: relative;
+    }
+    .title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 135px;
+        @include breakpoint(xl) {
+            font-size: 80px;
+        }
+        @include breakpoint(sm) {
+            text-align: center;
+            font-size: 34px;
+        }
+    }
+    .swiper {
+        width: 100%;
+        margin-top: 100px;
+        @include breakpoint(md) {
+            margin-top: 30px;
+        }
+    }
+    .swiper-button-next {
+        width: 58px;
+        height: 58px;
+        background: #202020;
+        border-radius: 50%;
+        right: -90px;
+        &::after {
+            all: unset;
+        }
+        @include breakpoint(lg) {
+            display: none;
+        }
+    }
+    .swiper-button-prev {
+        width: 58px;
+        height: 58px;
+        background: #202020;
+        border-radius: 50%;
+        left: -90px;
+        &::after {
+            all: unset;
+        }
+        @include breakpoint(lg) {
+            display: none;
+        }
+    }
+    .swiper-pagination {
+        bottom: -40px;
+    }
+    .swiper-pagination-bullet {
+        background: #fff;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: $mainColor;
+        opacity: 1;
+    }
+    .card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(49.1px);
+        border-radius: 33px;
+        height: 360px;
+        padding: 50px;
+        color: #fff;
+        width: 100%;
+        @include breakpoint(md) {
+            min-height: 340px;
+            height: auto;
+            padding: 30px;
+        }
+        .name {
+            font-weight: 700;
+            font-size: 24px;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            @include breakpoint(xl) {
+                font-size: 18px;
+            }
+        }
+        .btn {
+            margin-top: 25px;
+            background-color: $mainColor;
+
+            &.green {
+                background-color: #44b831;
+            }
+
+            border-radius: 15px;
+            padding: 18px 25px;
+            font-weight: 800;
+            font-size: 22px;
+            color: #fff;
+            transition: all 0.2s ease-in-out;
+            @include breakpoint(xl) {
+                font-size: 18px;
+            }
+            @include breakpoint(sm) {
+                font-size: 16px;
+            }
+
+            &:hover {
+                background-color: $hoverColor;
+
+                &.green {
+                    background-color: #399b29;
+                }
+            }
+        }
+        .text {
+            font-weight: 400;
+            font-size: 18px;
+            margin-top: 30px;
+            height: 180px;
+            overflow-y: auto;
+            @include breakpoint(xl) {
+                font-size: 16px;
+            }
+            @include breakpoint(md) {
+                height: auto;
+                overflow-y: unset;
+            }
+        }
+    }
+}
