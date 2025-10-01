@@ -143,6 +143,19 @@ select {
   font-family: "Gropled", sans-serif;
   line-height: 100%;
 }
+.g-font-center,
+.g-font-center * {
+  font-family: "Gropled", sans-serif;
+  line-height: 100%;
+  text-align: center;
+}
+.g-font-center-m,
+.g-font-center-m * {
+  font-family: "Gropled", sans-serif;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
 html {
   scroll-behavior: smooth;
@@ -345,7 +358,7 @@ body.disabled {
   bottom: 13px;
   width: 100%;
   height: 18px;
-  background-color: #9747ff;
+  background-color: #911efc;
   z-index: -1;
 }
 @media (max-width: 1399px) {
@@ -359,8 +372,8 @@ body.disabled {
     height: 5px;
   }
 }
-.welcome .content .type.green::after {
-  background-color: #2aff26;
+.welcome .content .type.blue::after {
+  background-color: #266bff;
 }
 .welcome .content .type.yellow::after {
   background-color: #ffb526;
@@ -399,79 +412,79 @@ body.disabled {
   animation-delay: 1s;
 }
 
-.cloud-info .wrap {
+.info .wrap {
   align-items: center;
 }
-.cloud-info img {
+.info img {
   max-width: 100%;
 }
-.cloud-info .text {
+.info .text {
   font-weight: 600;
   font-size: 32px;
   color: #fff;
 }
 @media (max-width: 767px) {
-  .cloud-info .text {
+  .info .text {
     text-align: center;
   }
 }
-.cloud-info .text.right {
+.info .text.right {
   text-align: right;
 }
 @media (max-width: 767px) {
-  .cloud-info .text.right {
+  .info .text.right {
     text-align: center;
   }
 }
 @media (max-width: 1399px) {
-  .cloud-info .text {
+  .info .text {
     font-size: 24px;
   }
 }
 @media (max-width: 1199px) {
-  .cloud-info .text {
+  .info .text {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  .cloud-info .reverse {
+  .info .reverse {
     flex-direction: column-reverse;
   }
-  .cloud-info img {
+  .info img {
     display: flex;
     width: 150px;
     margin: 0 auto;
   }
-  .cloud-info .wrap {
+  .info .wrap {
     margin-bottom: 50px;
   }
 }
 
-.tariff-plans {
+.projects {
   color: #fff;
   margin-top: 200px;
 }
 @media (max-width: 767px) {
-  .tariff-plans {
+  .projects {
     margin-top: 100px;
   }
 }
-.tariff-plans .title {
+.projects .title {
   font-weight: 700;
   font-size: 135px;
 }
 @media (max-width: 1399px) {
-  .tariff-plans .title {
+  .projects .title {
     font-size: 80px;
   }
 }
 @media (max-width: 767px) {
-  .tariff-plans .title {
+  .projects .title {
     font-size: 40px;
     text-align: center;
   }
 }
-.tariff-plans .plans .card {
+.projects .p .card {
   margin-top: 100px;
   width: 100%;
   height: auto;
@@ -480,33 +493,36 @@ body.disabled {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url("../img/plan-purple.png");
+  background-image: url("../img/project-purple.png");
 }
 @media (max-width: 767px) {
-  .tariff-plans .plans .card {
+  .projects .p .card {
     margin-top: 40px;
     padding: 40px 30px;
     border-radius: 15px;
   }
 }
-.tariff-plans .plans .card.green {
-  background-image: url("../img/plan-green.png");
+.projects .p .card.green {
+  background-image: url("../img/project-green.png");
 }
-.tariff-plans .plans .card .name {
+.projects .p .card.yellow {
+  background-image: url("../img/project-yellow.png");
+}
+.projects .p .card .name {
   font-weight: 700;
   font-size: 48px;
 }
 @media (max-width: 1399px) {
-  .tariff-plans .plans .card .name {
+  .projects .p .card .name {
     font-size: 40px;
   }
 }
 @media (max-width: 767px) {
-  .tariff-plans .plans .card .name {
+  .projects .p .card .name {
     font-size: 24px;
   }
 }
-.tariff-plans .plans .card .options {
+.projects .p .card .options {
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 40px;
@@ -517,7 +533,7 @@ body.disabled {
        column-gap: 12px;
   row-gap: 12px;
 }
-.tariff-plans .plans .card .options p {
+.projects .p .card .options p {
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 20px;
@@ -530,41 +546,42 @@ body.disabled {
           backdrop-filter: blur(5px);
 }
 @media (max-width: 1399px) {
-  .tariff-plans .plans .card .options p {
+  .projects .p .card .options p {
     font-size: 20px;
   }
 }
 @media (max-width: 767px) {
-  .tariff-plans .plans .card .options p {
+  .projects .p .card .options p {
     font-size: 16px;
   }
 }
 @media (max-width: 767px) {
-  .tariff-plans .plans .card .options {
+  .projects .p .card .options {
     grid-template-columns: auto;
     margin-top: 20px;
   }
 }
-.tariff-plans .plans .card .text {
+.projects .p .card .text {
   font-weight: 600;
   font-size: 26px;
   color: rgba(255, 255, 255, 0.6);
 }
-.tariff-plans .plans .card .text.disabled {
+.projects .p .card .text.disabled {
   color: rgba(255, 255, 255, 0.4);
 }
 @media (max-width: 1399px) {
-  .tariff-plans .plans .card .text {
+  .projects .p .card .text {
     font-size: 22px;
   }
 }
 @media (max-width: 767px) {
-  .tariff-plans .plans .card .text {
+  .projects .p .card .text {
     font-size: 16px;
   }
 }
-.tariff-plans .plans .card .btn {
+.projects .p .card .btn {
   margin-top: 25px;
+  margin-right: 15px;
   background-color: #9747ff;
   border-radius: 15px;
   padding: 18px 25px;
@@ -573,23 +590,29 @@ body.disabled {
   color: #fff;
   transition: all 0.2s ease-in-out;
 }
-.tariff-plans .plans .card .btn.green {
+.projects .p .card .btn.green {
   background-color: #44b831;
 }
+.projects .p .card .btn.yellow {
+  background-color: #eeff00;
+}
+.projects .p .card .btn.orange {
+  background-color: #fcb736;
+}
 @media (max-width: 1399px) {
-  .tariff-plans .plans .card .btn {
+  .projects .plans .card .btn {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  .tariff-plans .plans .card .btn {
+  .projects .plans .card .btn {
     font-size: 16px;
   }
 }
-.tariff-plans .plans .card .btn:hover {
+.projects .plans .card .btn:hover {
   background-color: #6f00ff;
 }
-.tariff-plans .plans .card .btn:hover.green {
+.projects .plans .card .btn:hover.green {
   background-color: #399b29;
 }
 
