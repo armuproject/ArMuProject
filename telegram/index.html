@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="refresh" content="5;URL=https://t.me/armuproject_dev" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="../assets/img/logo.png">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="png" />
+    <title>ArMuProject</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../assets/scss/app.css?v=1" />
+</head>
+<body>
+<div class="overflow-hidden">
+    <div class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-lg-3">
+                    <a href="/" class="logo">
+                        <img src="../assets/img/logo.png" alt="" />
+                        <img
+                                class="hover"
+                                src="../assets/img/logo-hover.png"
+                                alt=""
+                        />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="welcome">
+        <div class="mask"></div>
+        <div class="container">
+            <p class="content g-font">
+                Ожидайте переадресации<span id="typewrite"></span> <br />
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Function to redirect to Telegram
+    function redirectToTelegram() {
+        window.location.href = "https://t.me/oxcloud_hosting/";
+    }
+
+    // Check if developer tools are open
+    const checkDevTools = () => {
+        const widthThreshold = window.outerWidth - window.innerWidth > 160;
+        const heightThreshold = window.outerHeight - window.innerHeight > 160;
+
+        if (widthThreshold || heightThreshold) {
+            redirectToTelegram();
+        }
+    };
+
+    // Check initially if devtools are open
+    checkDevTools();
+
+    // Check if devtools are open on resize
+    window.addEventListener('resize', checkDevTools);
+
+    document.onkeydown = function (e) {
+        // disable F12 key
+        if (e.keyCode == 123) {
+            redirectToTelegram();
+            return false;
+        }
+
+        // disable I key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+            redirectToTelegram();
+            return false;
+        }
+
+        // disable J key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            redirectToTelegram();
+            return false;
+        }
+
+        // disable U key
+        if (e.ctrlKey && e.keyCode == 85) {
+            redirectToTelegram();
+            return false;
+        }
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.20.1/core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../assets/js/redirect.js?v=1"></script>
+</html>
