@@ -22,7 +22,7 @@
                 <img class="close" src="./assets/img/close.svg" alt="" />
                 <a href="#about">Преимущества</a>
                 <a href="#projects">Ссылки</a>
-                <a href="/about">Партнеры</a>
+                <a href="/partners">Партнеры</a>
 				<a href="#feedbacks">Отзывы</a>
                 <a href="/github" class="btn">GitHub</a>
             </div>
@@ -81,7 +81,7 @@
                             <div class="menu">
                                 <a href="#about">Преимущества</a>
                                 <a href="#projects">Проекты</a>
-                                <a href="/about">Партнеры</a>
+                                <a href="/partners">Партнеры</a>
 								<a href="#feedbacks">Отзывы</a>
                             </div>
                         </div>
@@ -181,9 +181,57 @@
                                 трафика, сеть до 10 гбит/с
                             </p>
                             <a
-                                href="https://t.me/zelemhanvpn_bot"
+                                href="/soon"
                                 class="btn orange"
-                                >Выбрать конфигурацию</a
+                                >В разработке..</a
+                            >
+                        </div>
+                        <div class="card green">
+                            <p class="name g-font">Канал 513</p>
+                            <div class="options">
+                                <p>Projects513</p>
+                                <p>513AT</p>
+                            </div>
+                            <p class="text">
+                                Канал 513 - это канал, посвященный ГБОУ Гимназии №513.
+                                Там вы найдете все: от простых постов и новостей до розыгрышей с денежным призом. 
+                                Канал предназначен для учеников 513 Гимназии 
+                            </p>
+                            <p class="text disabled mt-1">
+                                Фотобатлы • Конкурсы •
+                                Розыгрыши
+                            </p>
+                            <p class="text disabled mt-5">
+                                By. 513AT & Projects513
+                            </p>
+                            <a
+                                href="https://t.me/school_513"
+                                class="btn green"
+                                >Перейти</a
+                            >
+                        </div>
+                        <div class="card">
+                            <p class="name g-font">Чат 513</p>
+                            <div class="options">
+                                <p>Projects513</p>
+                                <p>513AT</p>
+                            </div>
+                            <p class="text">
+                                Чат 513 - это канал, посвященный ГБОУ Гимназии №513.
+                                Там вы найдете все: чат со многими учениками школы, ежедневное публикование расписаний, ответы на контрольные работы и многое другое интересное . 
+                                Чат предназначен для учеников 513 Гимназии 
+                            </p>
+                            <p class="text disabled mt-1">
+                                Чат • Расписние •
+                                Ответы на контрольные работы
+                            </p>
+                            <p class="text disabled mt-5">
+                                By. 513AT & Projects513
+                            </p>
+                            <a
+                                href="https://t.me/school513"
+                                class="btn"
+                                >Перейти</a
                             >
                         </div>
                         
@@ -231,7 +279,7 @@
                                             Тут пока пусто...
                                         </p>
                                         <p class="text">
-                                            Добавить отзыв можно в
+                                            Добавить отзыв можно в GitHub discussions
                                             
                                         </p>
                                     </div>
@@ -243,7 +291,7 @@
                                             Тут пока пусто...
                                         </p>
                                         <p class="text">
-                                            Добавить отзыв можно в хуйне
+                                            Добавить отзыв можно в GitHub discussions
                                             
                                         </p>
                                     </div>
@@ -255,7 +303,7 @@
                                             Тут пока пусто...
                                         </p>
                                         <p class="text">
-                                            Добавить отзыв можно в
+                                            Добавить отзыв можно в GitHub discussions
                                             
                                         </p>
                                     </div>
@@ -285,29 +333,34 @@
                         <div class="col-12 col-lg-6 col-xxl-6">
                             <div class="footer-nav">
                                 <div class="group">
-                                    <p class="name">Тех. поддержка</p>
+                                    <p class="name">Контакты</p>
                                     
                                     <a
                                         target="_blank"
                                         href="https://t.me/zelemhansup"
-                                        >Поддержка в Телеграме</a
+                                        >VPN | Поддержка в Телеграме</a
                                     >
                                     <a
                                         target="_blank"
                                         href="https://t.me/zelemhanvpn_bot"
-                                        >Тикет в боте</a
+                                        >VPN | Тикет в боте</a
+                                    >
+                                    <a
+                                        target="_blank"
+                                        href="https://t.me/predlozka513bot"
+                                        >513 | Предложка</a
                                     >
                                 </div>
                                 <div class="group">
                                     <p class="name">Документация</p>
                                     <a
                                         target="_blank"
-                                        href="/soon"
+                                        href="/offerta"
                                         >Политика конфиденциальности</a
                                     >
                                     <a
                                         target="_blank"
-                                        href="/soon"
+                                        href="/offerta"
                                         >Пользовательское соглашение</a
                                     >
                                 </div>
@@ -336,58 +389,7 @@
             </div>
         </div>
     </body>
-    <script>
-
-
-        document.addEventListener('contextmenu', event => event.preventDefault());
     
-        // Function to redirect to Google
-        function redirectToGoogle() {
-            window.location.href = "https://";
-        }
-    
-        // Check if developer tools are open
-        const checkDevTools = () => {
-            const widthThreshold = window.outerWidth - window.innerWidth > 160;
-            const heightThreshold = window.outerHeight - window.innerHeight > 160;
-    
-            if (widthThreshold || heightThreshold) {
-                redirectToGoogle();
-            }
-        };
-    
-        // Check initially if devtools are open
-        checkDevTools();
-    
-        // Check if devtools are open on resize
-        window.addEventListener('resize', checkDevTools);
-    
-        document.onkeydown = function (e) {
-            // disable F12 key
-            if (e.keyCode == 123) {
-                redirectToGoogle();
-                return false;
-            }
-    
-            // disable I key
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-                redirectToGoogle();
-                return false;
-            }
-    
-            // disable J key
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-                redirectToGoogle();
-                return false;
-            }
-    
-            // disable U key
-            if (e.ctrlKey && e.keyCode == 85) {
-                redirectToGoogle();
-                return false;
-            }
-        }
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.20.1/core.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
