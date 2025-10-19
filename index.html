@@ -1,398 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="ArMuProject">
-        <meta property="og:title" content="ArMuProject">
-        <meta property="og:description" content="ArMuProject">
-        <meta name="keywords" content="ArMuProjetc">
-        <meta property="og:image" content="./assets/img/logo.png">
-        <link rel="icon" href="./assets/img/logo.png" type="image/png" >
-        <title>ArMuProject</title>
-        <link
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="../assets/img/logo.png">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="png" />
+    <title>ArMuProject</title>
+    <link
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"s
-        />
-        <link rel="stylesheet" href="./assets/scss/app.css?v=1" />
-    </head>
-    <body oncontextmenu="return false;">
-        <div class="mobile-menu">
-            <div class="menu">
-                <img class="close" src="./assets/img/close.svg" alt="" />
-                <a href="#about">Преимущества</a>
-                <a href="#projects">Ссылки</a>
-                <a href="/partners">Партнеры</a>
-				<a href="#feedbacks">Отзывы</a>
-                <a href="/github" class="btn">GitHub</a>
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../assets/scss/app.css?v=1" />
+</head>
+<body>
+<div class="overflow-hidden">
+    <div class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-lg-3">
+                    <a href="/" class="logo">
+                        <img src="../assets/img/logo.png" alt="" />
+                        <img
+                                class="hover"
+                                src="../assets/img/logo-hover.png"
+                                alt=""
+                        />
+                    </a>
+                </div>
+
             </div>
         </div>
-        <div class="overflow-hidden">
-            <div class="header">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-6 col-lg-3">
-                            <a href="/" class="logo">
-                                <img src="./assets/img/logo.png" alt="" />
-                                <img
-                                    class="hover"
-                                    src="./assets/img/logo-hover.png"
-                                    alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="col-6 mobile-show">
-                            <div class="mobile-menu-btn">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M3 7H21"
-                                        stroke="#fff"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                    />
-                                    <path
-                                        d="M9.48999 12H21"
-                                        stroke="#fff"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                    />
-                                    <path
-                                        d="M3 12H5.99"
-                                        stroke="#fff"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                    />
-                                    <path
-                                        d="M3 17H21"
-                                        stroke="#fff"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="col-6 d-flex justify-content-center">
-                            <div class="menu">
-                                <a href="#about">Преимущества</a>
-                                <a href="#projects">Проекты</a>
-                                <a href="/partners">Партнеры</a>
-								<a href="#feedbacks">Отзывы</a>
-                            </div>
-                        </div>
-                        <div class="col-3 d-flex justify-content-end">
-                            <a
-                                href="/github"
-                                class="default-btn header-btn"
-                                >GitHub</a
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="welcome">
-                <div class="mask"></div>
-                <div class="container">
-                    <p class="content g-font">
-                        ArMuProject <br />
-                        <span id="typewrite"></span>
-                    </p>
-                </div>
-                <div class="arrows" id="scroll_down">
-                    <img src="./assets/img/arrow.svg" alt="" />
-                    <img src="./assets/img/arrow.svg" alt="" />
-                    <img src="./assets/img/arrow.svg" alt="" />
-                </div>        
-            </div>
-            <div class="info" id="about">
-                <div class="container">
-                    <div class="row wrap reverse">
-                        <div class="col-12 col-md-3">
-                            <img src="./assets/img/info1-img.png" alt="" />
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <p class="text right">
-                                Мы постоянно прислушиваемся к пользователям, чтобы сделать проект лучшим для всех. Денис гофрен лох
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <img src="./assets/img/info1-num.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="row wrap">
-                        <div class="col-12 col-md-3">
-                            <img src="./assets/img/info2-num.png" alt="" />
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <p class="text">
-                                Мы гарантируем надежную работу и защиту ваших данных.
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <img src="./assets/img/info2-img.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="row wrap reverse">
-                        <div class="col-12 col-md-3">
-                            <img src="./assets/img/info3-img.png" alt="" />
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <p class="text right">
-                                Быстрая и оперативная поддержка, ответит на
-                                любой ваш вопрос и поможет решить трудную
-                                проблему
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <img src="./assets/img/info3-num.png" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="projects" id="projects">
-                <div class="container">
-                    <p class="title g-font">Проекты</p>
-                    <div class="p">
-
-						<div class="card yellow">
-                            <p class="name g-font">VPN-сервис</p>
-                            <div class="options">
-                                <p>сеть до 10 гбит/с</p>
-                                <p>от 99 ₽ / месяц</p>
-                            </div>
-                            <p class="text">
-                                ZelemhanVPN мощный vpn сервис для вас и ваших повседневных задач
-                                Высокоскоростные серверы на базе
-                                мощного процессора и сети до 10 гбит/с.
-                                Сервис для входа на заблокированные
-								сайты, анонимности и т.д. Локация: Германия, Польша, Латвия.
-                            </p>
-                            <p class="text disabled mt-1">
-                                Техническия поддержка 24/7 • Аптайм 100% •
-                                Высокая скорость
-                            </p>
-                            <p class="text disabled mt-5">
-                                Минимальная конфигурация — Безлимит
-                                трафика, сеть до 10 гбит/с
-                            </p>
-                            <a
-                                href="/soon"
-                                class="btn orange"
-                                >В разработке..</a
-                            >
-                        </div>
-                        <div class="card green">
-                            <p class="name g-font">Канал 513</p>
-                            <div class="options">
-                                <p>Projects513</p>
-                                <p>513AT</p>
-                            </div>
-                            <p class="text">
-                                Канал 513 - это канал, посвященный ГБОУ Гимназии №513.
-                                Там вы найдете все: от простых постов и новостей до розыгрышей с денежным призом. 
-                                Канал предназначен для учеников 513 Гимназии 
-                            </p>
-                            <p class="text disabled mt-1">
-                                Фотобатлы • Конкурсы •
-                                Розыгрыши
-                            </p>
-                            <p class="text disabled mt-5">
-                                By. 513AT & Projects513
-                            </p>
-                            <a
-                                href="https://t.me/school_513"
-                                class="btn green"
-                                >Перейти</a
-                            >
-                        </div>
-                        <div class="card">
-                            <p class="name g-font">Чат 513</p>
-                            <div class="options">
-                                <p>Projects513</p>
-                                <p>513AT</p>
-                            </div>
-                            <p class="text">
-                                Чат 513 - это чат, посвященный ГБОУ Гимназии №513.
-                                Там вы найдете все: чат со многими учениками школы, ежедневное публикование расписаний, ответы на контрольные работы и многое другое интересное. 
-                                Чат предназначен для учеников 513 Гимназии 
-                            </p>
-                            <p class="text disabled mt-1">
-                                Чат • Расписние •
-                                Ответы на контрольные работы
-                            </p>
-                            <p class="text disabled mt-5">
-                                By. 513AT & Projects513
-                            </p>
-                            <a
-                                href="https://t.me/school513"
-                                class="btn"
-                                >Перейти</a
-                            >
-                        </div>
-                        
-                </div>
-            </div>
-                <div class="feedbacks" id="feedbacks">
-                    <div class="container">
-                        <p class="title g-font">Отзывы клиентов</p>
-                    </div>
-                    <div class="container">
-                        <div class="swiper-button-prev">
-                            <svg
-                                    width="27"
-                                    height="17"
-                                    viewBox="0 0 27 17"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                        d="M1.10703 7.58847C0.676959 8.01855 0.676959 8.71583 1.10703 9.1459L8.11544 16.1543C8.54551 16.5844 9.2428 16.5844 9.67287 16.1543C10.1029 15.7242 10.1029 15.027 9.67287 14.5969L3.44317 8.36719L9.67287 2.13749C10.1029 1.70742 10.1029 1.01013 9.67287 0.580062C9.2428 0.149991 8.54551 0.149991 8.11544 0.580062L1.10703 7.58847ZM1.88574 9.46845H26.8478V7.26592H1.88574V9.46845Z"
-                                        fill="white"
-                                />
-                            </svg>
-                        </div>
-                        <div class="swiper-button-next">
-                            <svg
-                                    width="27"
-                                    height="17"
-                                    viewBox="0 0 27 17"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                        d="M26.6265 9.1459C27.0566 8.71583 27.0566 8.01855 26.6265 7.58847L19.6181 0.580062C19.188 0.149991 18.4907 0.149991 18.0606 0.580062C17.6306 1.01013 17.6306 1.70742 18.0606 2.13749L24.2903 8.36719L18.0606 14.5969C17.6306 15.027 17.6306 15.7242 18.0606 16.1543C18.4907 16.5844 19.188 16.5844 19.6181 16.1543L26.6265 9.1459ZM0.885742 9.46845H25.8478V7.26592H0.885742V9.46845Z"
-                                        fill="white"
-                                />
-                            </svg>
-                        </div>
-                        <div class="swiper" id="feedbacks_slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <p class="name">ArMuProject</p>
-                                        <p class="text">
-                                            Тут пока пусто...
-                                        </p>
-                                        <p class="text">
-                                            Добавить отзыв можно в GitHub discussions
-                                            
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <p class="name">ArMuProject</p>
-                                        <p class="text">
-                                            Тут пока пусто...
-                                        </p>
-                                        <p class="text">
-                                            Добавить отзыв можно в GitHub discussions
-                                            
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <p class="name">ArMuProject</p>
-                                        <p class="text">
-                                            Тут пока пусто...
-                                        </p>
-                                        <p class="text">
-                                            Добавить отзыв можно в GitHub discussions
-                                            
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-3 col-xxl-3">
-                            <div class="copyright">
-                                <img
-                                    src="./assets/img/footer-logo.png"
-                                    alt=""
-                                />
-                                <p>
-                                    Проекты для<br />
-                                    каждого человека.<br /><br />
-                                    © 2025. Все права защищены.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6 col-xxl-6">
-                            <div class="footer-nav">
-                                <div class="group">
-                                    <p class="name">Контакты</p>
-                                    
-                                    <a
-                                        target="_blank"
-                                        href="https://t.me/zelemhansup"
-                                        >VPN | Поддержка в Телеграме</a
-                                    >
-                                    <a
-                                        target="_blank"
-                                        href="https://t.me/zelemhanvpn_bot"
-                                        >VPN | Тикет в боте</a
-                                    >
-                                    <a
-                                        target="_blank"
-                                        href="https://t.me/predlozka513bot"
-                                        >513 | Предложка</a
-                                    >
-                                </div>
-                                <div class="group">
-                                    <p class="name">Документация</p>
-                                    <a
-                                        target="_blank"
-                                        href="/offerta"
-                                        >Политика конфиденциальности</a
-                                    >
-                                    <a
-                                        target="_blank"
-                                        href="/offerta"
-                                        >Пользовательское соглашение</a
-                                    >
-                                </div>
-                                <div class="group">
-                                    <p class="name">Ссылки</p>
-                                    <a
-                                        target="_blank"
-                                        href="/telegram"
-                                        >Telegram</a
-                                    >
-                                    <a
-                                        target="_blank"
-                                        href="/github"
-                                        >GitHub</a
-                                    >
-                                    <a
-                                        target="_blank"
-                                        href="/discord"
-                                        >Discord</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <div class="welcome">
+        <div class="mask"></div>
+        <div class="container">
+            <p class="content g-font">
+                24.10.2025<span id="typewrite"></span> <br />
+            </p>
         </div>
-    </body>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.20.1/core.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./assets/js/main.js?v=1"></script>
-  
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.20.1/core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../assets/js/redirect.js?v=1"></script>
 </html>
