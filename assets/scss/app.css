@@ -599,6 +599,9 @@ body.disabled {
 .projects .p .card .btn.orange {
   background-color: #fcb736;
 }
+.projects .p .card .btn.red {
+  background-color: #ff0000;
+}
 @media (max-width: 1399px) {
   .projects .plans .card .btn {
     font-size: 18px;
