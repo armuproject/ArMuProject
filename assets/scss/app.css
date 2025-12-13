@@ -375,6 +375,9 @@ body.disabled {
 .welcome .content .type.blue::after {
   background-color: #266bff;
 }
+.welcome .content .type.pink::after {
+  background-color: #e20aff;
+}
 .welcome .content .type.yellow::after {
   background-color: #ffb526;
 }

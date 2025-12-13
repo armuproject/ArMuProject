@@ -41,6 +41,9 @@ typewriter
     .typeString(`<span class="type blue">для вас</span>`)
     .pauseFor(write_delay)
     .deleteAll()
+    .typeString(`<span class="type pink">люблю Соню</span>`)
+    .pauseFor(write_delay)
+    .deleteAll()
     .start();
 
 $(document).on("mousemove", function (event) {
